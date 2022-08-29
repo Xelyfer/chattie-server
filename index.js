@@ -1,6 +1,6 @@
 const app = require("express")();
 const http = require("http").createServer(app);
-const origin = process.env.URL || "http://localhost:3000";
+const origin = "https://chattie-xelyfer.herokuapp.com/";
 const io = require("socket.io")(http, {
   cors: {
     origin: [origin],
